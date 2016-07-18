@@ -1,0 +1,10 @@
+To compile it:
+
+    Fetch & extract the upstream sources
+    apt-get build-dep linux
+    Copy your /boot/config-<whatever> to .config
+    make olddefconfig
+    make deb-pkg
+    Install the resulting deb files
+    Profit
+

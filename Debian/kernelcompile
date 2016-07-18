@@ -1,0 +1,26 @@
+fakeroot make-kpkg --initrd --append-to-version=-custom kernel_image kernel_headers  -j `getconf _NPROCESSORS_ONLN`
+
+
+
+eg.
+
+make -j 5
+
+but how to use it with make-kpkg?
+
+First we need to have kernel-package installed
+
+apt-get install kernel-package
+
+next we need to add line CONCURRENCY_LEVEL to /etc/kernel-pkg.conf
+
+echo "CONCURRENCY_LEVEL= num_of_cores+1" >> /etc/kernel-pkg.conf
+
+eg.
+echo "CONCURRENCY_LEVEL= 5" >> /etc/kernel-pkg.conf
+
+then we can build kernel using make-kpkg with 5 threads
+
+make-kpkg --initrd kernel_image kernel_headers
+
+Voila!
