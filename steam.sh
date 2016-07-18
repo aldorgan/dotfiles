@@ -1,0 +1,1 @@
+force_s3tc_enable=true steam
