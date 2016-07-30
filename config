@@ -101,6 +101,32 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+
+
+set $ws1 1
+set $ws2 2
+set $ws3 3
+set $ws4 4
+set $ws5 5
+set $ws6 6
+set $ws7 7
+set $ws8 8
+set $ws9 9
+set $ws10 10
+
+
+
+# Assign Windows:
+assign [class="Firefox"] $ws1
+assign [class="xfce4-terminal"] $ws2
+assign [class="Thunderbird"] $ws3
+assign [class="Thunar"] $ws4
+assign [class="Pidgin"] $ws5
+#assign [class="mpv"] $ws6
+
+
+
+
 # switch to workspace
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
@@ -205,6 +231,7 @@ for_window [window_role="task_dialog"] floating enable
 for_window [title="Preferences$"] floating enable
 #for_window [class="[.]*"] floating enable
 for_window [class="Steam"] floating enable
+#for_window [class="Pidgin"] floating enable
 bindsym $mod+F11 exec xbacklight -dec 10
 bindsym $mod+F12 exec xbacklight -inc 10
 bindsym $mod+F2 exec amixer set Master 5%-
