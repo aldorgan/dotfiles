@@ -1,0 +1,53 @@
+
+1. Install needed packages to build the software
+
+sudo apt-get install git devscripts equivs
+
+2. Clone latest mpv software and cd into that directory
+
+git clone https://github.com/mpv-player/mpv-build.git
+
+cd mpv-build
+
+3. Make sure everything is up-to-date
+
+./update -j4
+
+(optional) In the future, to update the package and files start back at step 4 and issue the following, then continue through steps 5 on.
+
+./rebuild -j4
+
+4. Create and install a dummy package that pulls in all needed dependencies
+
+(The first command removes any previous .deb, if compiled previously)
+
+rm -f mpv-build-deps_*_*.deb
+
+mk-build-deps -s sudo -i
+
+5. Finally, build and then install the created deb of mpv, which will be located one directory higher
+
+dpkg-buildpackage -uc -us -b -j4
+
+Example created deb: mpv_0.15.0_amd64.deb
+
+Install the created deb (might be named differently!) with dpkg -i:
+
+sudo dpkg -i ../mpv_0.15.0_amd64.deb
+
+Done.
+
+stmiller@brahms:~$ mpv --version
+mpv 0.15.0-git-d1d6257 (C) 2000-2016 mpv/MPlayer/mplayer2 projects
+ built on Mon Feb 15 20:19:35 EST 2016
+ffmpeg library versions:
+   libavutil       55.17.103
+   libavcodec      57.24.102
+   libavformat     57.25.100
+   libswscale      4.0.100
+   libavfilter     6.31.100
+   libswresample   2.0.101
+ffmpeg version: n3.0
+
+
+
