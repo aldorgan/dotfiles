@@ -23,7 +23,7 @@ cd mpv-build
 
 rm -f mpv-build-deps_*_*.deb
 
-mk-build-deps -s sudo -i
+mpv-build-deps -s sudo -i
 
 5. Finally, build and then install the created deb of mpv, which will be located one directory higher
 
