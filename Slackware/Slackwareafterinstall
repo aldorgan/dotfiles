@@ -1,0 +1,15 @@
+Slackware todo after install:
+
+nano /etc/ntpd.conf ntp pools
+
+nano /etc/profile.d/lang.sh enable UTF-8
+
+nano /etc/fstab add noatime
+
+ln -s /etc/fonts/conf.aviable 10-subpixel-rgb, 11-lcdfilter-deafault to /etc/fonts.d
+
+nano /etc/slackpkg/mirrors
+
+
+
+
