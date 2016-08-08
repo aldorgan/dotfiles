@@ -1,0 +1,2 @@
+event=button/lid (LID)
+action=/usr/sbin/pm-suspend
