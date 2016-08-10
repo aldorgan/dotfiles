@@ -214,6 +214,8 @@ bindsym XF86AudioLowerVolume exec /usr/bin/pactl set-sink-volume 1 -- '-5%'
 bindsym XF86AudioRaiseVolume exec /usr/bin/pactl set-sink-volume 1 -- '+5%'
 #bindsym XF86AudioLowerVolume exec /usr/bin/pactl set-sink-volume @DEFAULT_SINK@ -- '-5%'
 #bindsym XF86AudioRaiseVolume exec /usr/bin/pactl set-sink-volume @DEFAULT_SINK@ -- '+5%'
+bindsym XF86MonBrightnessUp exec "xbacklight +10"
+bindsym XF86MonBrightnessDown exec "xbacklight -10"
 
 #exec volumeicon &
 #exec pavucontrol &
