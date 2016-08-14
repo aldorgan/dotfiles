@@ -39,7 +39,7 @@ bindsym $mod+u border none
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
