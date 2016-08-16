@@ -226,4 +226,5 @@ exec --no-startup-id xset b off &
 exec --no-startup-id xset s off &
 exec blueman-applet &
 exec synclient MaxTapTime=0 &
-exec setxkbmap se &
+#exec setxkbmap se &
+exec compton --no-startup-id --vsync opengl --backend glx --paint-on-overlay
