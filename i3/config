@@ -232,8 +232,7 @@ exec dropbox start &
 exec --no-startup-id xset dpms 3000 3000 3000 &
 exec --no-startup-id xset b off &
 exec --no-startup-id xset s off &
-exec blueman-applet &
+#exec blueman-applet &
 exec synclient MaxTapTime=0 &
 #exec setxkbmap se &
-exec gnome-keyring-daemon &
-#exec compton --no-startup-id --vsync opengl --backend glx --paint-on-overlay
+exec --no-startup-id /usr/lib64/polkit-gnome/polkit-gnome-authentication-agent-1
