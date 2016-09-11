@@ -1,0 +1,1 @@
+sudo mount.cifs //10.0.0.7/NAS /NAS -o user=crash,domain=workgroup,rw
