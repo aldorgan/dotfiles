@@ -12,4 +12,6 @@ nano /etc/slackpkg/mirrors
 
 
 
+sboinstall -j5 x264 x265 libass libbluray faac libfdk-aac openal xvidcore
+sboinstall -p
 
