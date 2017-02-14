@@ -1,0 +1,23 @@
+To install youtube-dl I suggest you install it through pip like so:
+
+sudo apt-get install python-pip 
+
+sudo pip install youtube-dl
+
+create a script called "ytcli" in /usr/local/bin
+
+sudo nano /usr/local/bin/ytcli
+
+And paste this inside it:
+
+#!/bin/bash
+omxplayer -o hdmi $(youtube-dl -g "$1")
+
+Save it with ctrl+x and run
+
+chmod +x /usr/local/bin/ytcli
+
+The script is executable now, all you need to do is to logout and login once and now you can write
+
+ytcli link.to.youtube.video.or.twitch.stream
+
