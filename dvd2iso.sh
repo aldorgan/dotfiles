@@ -35,6 +35,6 @@ dvdbackup -p -M -v -i "$DVD_DEVICE" -n "$DVD_TITLE"
 
 # create iso from dvdbackup files then cleanup temp files
 # note: -V TITLE_IN_CAPS_WO_SPACE is to name the dvdvideo else it will default to "CDROM" when it is mounted
-mkisofs -V "$DVD_TITLE" -dvd-video -udf -o "$DVD_TITLE".iso "$DVD_TITLE" \
+genisoimage -V "$DVD_TITLE" -dvd-video -udf -o "$DVD_TITLE".iso "$DVD_TITLE" \
   && rm -rfv "$DVD_TITLE"
 
