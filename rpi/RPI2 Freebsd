@@ -1,0 +1,14 @@
+Fixa svenskt tangentbord och UTF-8 för irssi:
+/etc/login.conf:
+:charset=UTF-8:\
+:lang=en_US.UTF-8:\
+
+
+/etc/rc.conf:
+
+ntpd_enable="YES"
+ntpd_sync_on_start="YES"
+powerd_enable="YES"
+powerd_flags="-a hadp"
+keymap="se"
+
