@@ -1,0 +1,11 @@
+--enable-libx264
+--enable-libmp3lame
+--enable-libx265
+--enable-libfdk-aac
+--enable-vdpau
+--enable-nonfree
+--enable-libvpx
+--enable-libopus
+--enable-libvorbis
+--enable-libtheora
+--enable-libass
