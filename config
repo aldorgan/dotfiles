@@ -30,7 +30,7 @@ bindsym $mod+u border none
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec mate-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -203,6 +203,8 @@ for_window [window_role="About"] floating enable
 #for_window [class="[.]*"] floating enable
 for_window [class="Steam"] floating enable
 for_window [class="Pidgin"] floating enable
+for_window [class="Galculator"] floating enable
+
 ### Other ###
 bindsym Print exec scrot -q 100
 bindsym $mod+F11 exec light -U 10
@@ -229,6 +231,7 @@ bindsym XF86AudioLowerVolume exec amixer set Master 5%-
 #exec volumeicon &
 #exec pavucontrol &
 exec --no-startup-id nm-applet &
+exec --no-startup-id dunst &
 exec dropbox start &
 exec --no-startup-id xset dpms 3000 3000 3000 &
 exec --no-startup-id xset b off &
@@ -239,5 +242,5 @@ exec synclient MaxTapTime=0 &
 #exec --no-startup-id /usr/lib64/polkit-gnome/polkit-gnome-authentication-agent-1 &
 #exec --no-startup-id compton -cCGb --backend glx --vsync opengl
 #exec /home/crash/smb.sh
-exec feh --bg-scale /home/crash/Downloads/.t/i2hyOY5.jpg
+exec feh --bg-scale /home/crash/dotfiles/wallpaper.jpg
 #for_window [class="mpv"] move container to workspace 4
