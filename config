@@ -30,7 +30,7 @@ bindsym $mod+u border none
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec mate-terminal
+bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -239,8 +239,9 @@ exec --no-startup-id xset s off &
 exec blueman-applet &
 exec synclient MaxTapTime=0 &
 #exec setxkbmap se &
-#exec --no-startup-id /usr/lib64/polkit-gnome/polkit-gnome-authentication-agent-1 &
-#exec --no-startup-id compton -cCGb --backend glx --vsync opengl
+exec --no-startup-id /usr/lib64/polkit-gnome/polkit-gnome-authentication-agent-1 &
+exec --no-startup-id compton -CGb --backend glx --vsync opengl
 #exec /home/crash/smb.sh
 exec feh --bg-scale /home/crash/dotfiles/wallpaper.jpg
 #for_window [class="mpv"] move container to workspace 4
+exec --no-startup-id /usr/bin/mate-polkit &
