@@ -1,0 +1,3 @@
+wlc Dependency List: git pkg-config cmake libpixman-1-dev libwayland-dev libwayland-client0 libwayland-cursor0 wayland-protocols libxkbcommon-dev libudev-dev libinput-dev libx11-dev libxcb1-dev libxcb-ewmh-dev libxcb-composite0-dev libxcb-xkb-dev libxcb-image0-dev libxcb-xfixes0-dev libgbm-dev libdrm-dev libegl1-mesa-dev libgles2-mesa-dev libdbus-1-dev libsystemd-dev
+
+ Sway Dependency List: xwayland libcap-dev libpcre2-dev libjson-c-dev libpango1.0-dev libcairo2-dev libgdk-pixbuf2.0-dev libpam0g-dev libdbus-1-dev imagemagick ffmpeg
