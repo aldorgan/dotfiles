@@ -13,7 +13,7 @@ font pango:Clear Sans 8
 
 
 #popup_during_fullscreen smart
-#hide_edge_borders smart
+hide_edge_borders smart
 focus_follows_mouse no
 #focus_follows_mouse yes
 workspace_layout tabbed
@@ -25,12 +25,13 @@ new_float normal
 bindsym $mod+t border normal
 bindsym $mod+y border 1pixel
 bindsym $mod+u border none
+bindsym $mod+Shift+m exec mpv $(xsel -b)
 #for_window [class="^.*"] border pixel 0
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec mate-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
