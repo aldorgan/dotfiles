@@ -20,7 +20,7 @@ workspace_layout tabbed
 #workspace_auto_back_and_forth yes
 #force_focus_wrapping yes
 bindsym $mod+Tab workspace back_and_forth
-new_window 1pixel
+new_window normal
 new_float normal
 bindsym $mod+t border normal
 bindsym $mod+y border 1pixel
