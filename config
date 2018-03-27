@@ -239,7 +239,7 @@ exec blueman-applet &
 exec synclient MaxTapTime=0 &
 #exec setxkbmap se &
 #exec --no-startup-id /usr/lib64/polkit-gnome/polkit-gnome-authentication-agent-1 &
-#exec --no-startup-id compton -CGb --backend glx --vsync opengl
+exec --no-startup-id compton  --config /dev/null -CGb --backend glx --vsync opengl-swc  --unredir-if-possible --glx-no-stencil --paint-on-overlay
 #exec /home/crash/smb.sh
 exec feh --bg-scale /home/crash/dotfiles/wallpaper.jpg
 #for_window [class="mpv"] move container to workspace 4
