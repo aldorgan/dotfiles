@@ -31,7 +31,7 @@ bindsym $mod+Shift+m exec mpv $(xsel -b)
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec mate-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -206,6 +206,7 @@ for_window [class="Steam"] floating enable
 for_window [class="Pidgin"] floating enable
 for_window [class="Galculator"] floating enable
 for_window [class="etcher"] floating enable
+for_window [class="vlc"] floating enable
 ### Other ###
 bindsym Print exec scrot -q 100
 bindsym $mod+F11 exec light -U 10
