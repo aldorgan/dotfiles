@@ -5,11 +5,11 @@
 
 set $mod Mod4
 #font pango: Source Sans Pro Regular 8
-font pango:Clear Sans 8
+#font pango:Clear Sans 8
 #font pango:DejaVu Sans Mono 8
 #font pango:DejaVu Sans Mono 8
-#font pango:monospace 8
-
+#font xft:monospace 8
+font xft:Droid Sans Mono 8
 
 
 #popup_during_fullscreen smart
