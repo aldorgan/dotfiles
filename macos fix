@@ -1,0 +1,4 @@
+defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
+defaults write com.apple.frameworks.diskimages skip-verify YES
+sudo spctl --master-disable
+
