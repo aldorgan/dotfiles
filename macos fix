@@ -2,3 +2,11 @@ defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
 defaults write com.apple.frameworks.diskimages skip-verify YES
 sudo spctl --master-disable
 include /usr/local/share/nano/*.nanorc in .nanorc
+
+# put this in your ~/.bashrc or ~/.profile
+function w {
+    mpv $(youtube-dl -f best -g $1) # best usually fetches h264 encoded video which is H/W accelerated on older platforms
+}
+source ~/.iterm2_shell_integration.bash
+eval "$(starship init bash)"
+
