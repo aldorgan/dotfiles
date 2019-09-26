@@ -1,4 +1,0 @@
-wget http://debian.sur5r.net/i3/pool/main/s/sur5r-keyring/sur5r-keyring_2018.01.30_all.deb
-/etc/apt/sources.list
-deb http://debian.sur5r.net/i3/ stretch main
-deb http://debian.sur5r.net/suckless-tools/ stretch main
