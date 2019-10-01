@@ -1,0 +1,3 @@
+# chmod +x ./scripts/kconfig/streamline_config.pl && ./scripts/kconfig/streamline_config.pl > config_strip
+# mv config_strip .config
+# make oldconfig
