@@ -1,3 +1,0 @@
-sudo dpkg-reconfigure fontconfig-config
-autohinter, auto subpixel, no bitmap
-sudo dpkg-reconfigure fontconfig
