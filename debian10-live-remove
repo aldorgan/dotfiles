@@ -2,6 +2,6 @@
 sudo apt-get purge xterm xiterm+thai mlterm
 # Next
 sudo apt-get purge mlterm-tiny
-sudo apt purge fcitx* goldendict kasumi
+sudo apt purge fcitx* goldendict kasumi ibus-* uim-*
 sudo apt-get autoclean && sudo apt-get autoremove
 
