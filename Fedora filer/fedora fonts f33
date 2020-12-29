@@ -1,0 +1,1 @@
+sudo dnf copr enable dawid/better_fontssudo dnf install -y fontconfig-enhanced-defaults fontconfig-font-replacements
